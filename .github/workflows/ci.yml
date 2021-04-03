@@ -38,7 +38,7 @@ jobs:
         run: ./gradlew :module:assembleRelease
         
       - name: List out dir
-        run: ls -l ./out/
+        run: ls -l ./module/build/outputs
 
       - name: Upload build artifact
         uses: actions/upload-artifact@v2
